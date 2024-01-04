@@ -7,7 +7,7 @@
     --col-text1: #C5C5C5;
     --col-text2: #898A8B;
     --text1: #7ec27e;
-    --text2: rgb(210, 159, 214);
+    --text2: #d29fd6;
     --text3: #97cde0;
 }
 
@@ -20,6 +20,9 @@
     font-family: 100%;
 }
 
+.ver {
+    color: var(--text1);
+}
 body{
     background-color: var(--col-pant1);
     /* line-height: 4.4em; */
@@ -106,6 +109,46 @@ body{
 
 .azul{
     color: var(--text3);
+}
+
+.naranja {
+    color: rgb(247, 211, 143);
+}
+
+.rojo {
+    color: rgb(224, 97, 68);
+}
+
+.morado {
+    color: rgb(154, 106, 226);
+}
+
+.morado2 {
+    color: rgb(114, 87, 155);
+}
+
+.verde2 {
+    color: #569c56;
+}
+
+.verde3 {
+    color: #427342;
+}
+
+.amarillo {
+    color: rgb(226, 217, 153);
+}
+
+.amarillo2 {
+    color: rgb(179, 173, 130);
+}
+
+.rojo2 {
+    color: rgb(196, 134, 93);
+}
+
+.celeste2 {
+    color: #6a95a4;
 }
 
 .convertir {
