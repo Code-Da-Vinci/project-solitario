@@ -1,8 +1,9 @@
-const LOGO_MENU = document.querySelector('#click_abrir');
-const LISTA_MENU = document.querySelector('#link_abrir');
-const CERRAR = document.querySelector('.img_abrir');
+const icono = document.querySelector('.navegar__icon');
+const navegar = document.querySelector('.navegar');
+const navegarUl = document.querySelector('.navegar__ul');
 
-LOGO_MENU.addEventListener('click',()=>{
-   LISTA_MENU.classList.toggle('activo');
-   CERRAR.classList.toggle('bi-x');
+icono.addEventListener('click',()=>{
+   icono.classList.toggle('bi-x');
+   navegar.classList.toggle('activo');
+   navegarUl.classList.toggle('activo');
 })
