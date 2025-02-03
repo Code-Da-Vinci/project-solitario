@@ -42,7 +42,7 @@ EN_DEFENSA.forEach(element => {
             <picture class="defense__card__image">
                <source srcset="images/S_${element.code}.webp" type="image/webp">
                <source srcset="images/S_${element.code}.jpg" type="image/jpeg">
-               <img class="defense__card__img" src="images/S_${element.code}.jpg" alt="${element.title}">
+               <img class="defense__card__img" src="images/S_${element.code}.jpg" alt="${element.title}" loading="lazy">
             </picture>
    
             <h3 class="defense__card__title defense__card__title-mod">${element.title}</h3>

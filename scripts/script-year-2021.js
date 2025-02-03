@@ -112,7 +112,7 @@ YEAR_2021.forEach(element => {
                <source srcset="fotos21/S_${element.codeName}.webp" type="image/webp">
                <source srcset="fotos21/S_${element.codeName}.jpg" type="image/jpeg">
                <img class="main__card__img" src="fotos21/S_${element.codeName
-               }.webp" alt="Solitario - No puedo">
+               }.jpg" alt="${element.name}" loading="lazy">
             </picture>
 
             <h2 class="main__card__title">${element.name} [LETRA]</h2>
