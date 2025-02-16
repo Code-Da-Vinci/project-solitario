@@ -1,4 +1,6 @@
-YEAR_2020 = [
+import { listYear } from "../script-years.js";
+
+const YEAR_2020 = [
    {
       name: "Solitario - Pero qué forma más buena",
       codeName: "PQFMB"
@@ -157,21 +159,7 @@ YEAR_2020 = [
    }
 ];
 
-const MAIN = document.querySelector(".main");
+const main = document.querySelector(".main");
+const YEAR = 20;
 
-YEAR_2020.forEach(element => {
-   MAIN.insertAdjacentHTML('beforeend', `
-      <article class="main__card">
-         <a class="main__card__link" href="letra20/${element.codeName}.html">
-            <picture class="main__card__image">
-               <source srcset="fotos20/S_${element.codeName}.webp" type="image/webp">
-               <source srcset="fotos20/S_${element.codeName}.jpg" type="image/jpeg">
-               <img class="main__card__img" src="fotos20/S_${element.codeName
-               }.jpg" alt="${element.name}" loading="lazy">
-            </picture>
-
-            <h2 class="main__card__title">${element.name} [LETRA]</h2>
-         </a>
-      </article>
-   `);
-});
+listYear (YEAR_2020, main, YEAR);

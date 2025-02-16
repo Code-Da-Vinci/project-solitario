@@ -1,4 +1,6 @@
-YEAR_2016 = [
+import { listYear } from "../script-years.js";
+
+const YEAR_2016 = [
    {
       name: "Solitario - No puedo (INÉDITO)",
       codeName: "NP"
@@ -253,9 +255,12 @@ YEAR_2016 = [
    }
 ];
 
-const MAIN = document.querySelector(".main");
+const main = document.querySelector(".main");
+const YEAR = 16;
 
-YEAR_2016.forEach(element => {
+listYear (YEAR_2016, main, YEAR);
+
+/* YEAR_2016.forEach(element => {
    MAIN.insertAdjacentHTML('beforeend', `
       <article class="main__card">
          <a class="main__card__link" href="letra16/${element.codeName}.html">
@@ -269,5 +274,7 @@ YEAR_2016.forEach(element => {
          </a>
       </article>
    `);
-});
+}); */
+
+
 

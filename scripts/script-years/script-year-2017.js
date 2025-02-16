@@ -1,4 +1,6 @@
-YEAR_2017 = [
+import { listYear } from "../script-years.js";
+
+const YEAR_2017 = [
    {
       name: "Solitario - Ofensivo",
       codeName: "OFENSIVO"
@@ -129,21 +131,7 @@ YEAR_2017 = [
    }
 ];
 
-const MAIN = document.querySelector(".main");
+const main = document.querySelector(".main");
+const YEAR = 17;
 
-YEAR_2017.forEach(element => {
-   MAIN.insertAdjacentHTML('beforeend', `
-      <article class="main__card">
-         <a class="main__card__link" href="letra17/${element.codeName}.html">
-            <picture class="main__card__image">
-               <source srcset="fotos17/S_${element.codeName}.webp" type="image/webp">
-               <source srcset="fotos17/S_${element.codeName}.jpg" type="image/jpeg">
-               <img class="main__card__img" src="fotos17/S_${element.codeName
-               }.jpg" alt="${element.name}" loading="lazy">
-            </picture>
-
-            <h2 class="main__card__title">${element.name} [LETRA]</h2>
-         </a>
-      </article>
-   `);
-});
+listYear (YEAR_2017, main, YEAR);
