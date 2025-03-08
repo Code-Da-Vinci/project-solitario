@@ -2,10 +2,6 @@ import { listYear } from "../script-years.js";
 
 const YEAR_2024 = [
    {
-      name: "Solitario - Os lo dije",
-      codeName: "OLD"
-   },
-   {
       name: "Solitario - Cultura y conocimiento",
       codeName: "CYC"
    },
