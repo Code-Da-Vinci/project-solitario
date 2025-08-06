@@ -2,6 +2,10 @@ import { listYear } from "../script-years.js";
 
 const YEAR_2025 = [
    {
+      name: "Solitario - Idolo de muchos, maestro de pocos",
+      codeName: "IDMMDP"
+   },
+   {
       name: "Solitario - Mi razón contra tus formas",
       codeName: "MRCTF"
    },
